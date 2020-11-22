@@ -314,21 +314,21 @@
 
     <footer id="contacts">
         <div class="container footer">
-            <div>
-            <a href="./index.html" class="link logo"><span class="logo-web">Web</span><span class="logo-web-footer">Studio</span></a>
-            <address class="footer-address">
-                <ul class="list link-styles">
-                    <li>
-                        <a href="https://goo.gl/maps/qeXEW7dZXN9ULPdL6" target="_blank" rel="noopener noreferer" class="link">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="link footer-contact">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380961111111" class="link footer-contact">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+            <div class="footer-logo">
+                <a href="./index.html" class="link logo"><span class="logo-web">Web</span><span class="logo-web-footer">Studio</span></a>
+                <address class="footer-address">
+                    <ul class="list link-styles">
+                        <li>
+                            <a href="https://goo.gl/maps/qeXEW7dZXN9ULPdL6" target="_blank" rel="noopener noreferer" class="link">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="link footer-contact">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="link footer-contact">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
             </div>
             <div class="footer-icons">
                 <h3 class="footer-icons-title">Присоединяйтесь</h3>
@@ -367,6 +367,22 @@
                     </li>
                 </ul>
             </div>
+            <div class="">
+                <h3 class="footer-icons-title">Подпишитесь на рассылку</h3>
+                <div class="">
+                    <form class="footer-form">
+                        <div class="footer-form-fild">
+                            <input class="footer-form-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+                        </div>
+
+                        <button type="submit" class="footer-btn">Подписаться
+                            <svg class="logo-send">
+                                <use href="./images/logo/sprite.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>    
+                </div>
+            </div>
         </div>
     </footer>
             <div class="backdrop is-hidden" data-modal>
@@ -376,6 +392,35 @@
                             <use href="./images/icons/sprite.svg#close"></use>
                         </svg>
                     </button>
+                    <h2 class="madal-title">Оставьте свои данные, мы перезвоним</h2>
+                    <div class="">
+                        <form class="modal-form">
+                            <div class="modal-form-feald">
+                                <label for="name">Имя</label>
+                                <input class="" type="name" name="name" id="name" />
+                            </div>
+                            <div class="modal-form-feald">
+                                <label for="telephone">Телефон</label>
+                                <input class="" type="tel" name="telephone" id="telephone" />
+                            </div>
+                            <div class="modal-form-feald">
+                                <label for="email">Почта</label>
+                                <input class="" type="email" name="email" id="email" />
+                            </div>
+                            <div class="modal-form-feald">
+                                <label for="comment">Комментарий</label>
+                                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                            </div>
+                            <div class="modal-conditions">
+                                <input class="" type="checkbox" value="conditions" id="conditions" />
+                                <label for="conditions">Соглашаюсь с рассылкой и принимаю 
+                                    <a href="">Условия договора</a>
+                                </label>
+                            </div>
+                    
+                            <button type="submit" class="modal-btn">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <script src="./js/modal.js"></script>
