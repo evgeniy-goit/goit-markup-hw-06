@@ -430,6 +430,11 @@ main {
   font-size: 16px;
 }
 
+.modal-form-feald input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
 .modal-form-feald textarea {
   resize: none;
   width: 100%;
@@ -443,8 +448,23 @@ main {
   letter-spacing: 0.01em;
 }
 
+.modal-form-feald textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-feald textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
 .modal-form > div:nth-child(4) {
   margin-bottom: 20px;
+}
+
+.modal-form-feald input:-webkit-autofill,
+.modal-form-feald input:-webkit-autofill:hover,
+.modal-form-feald input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--main-text-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
 }
 
 .modal-conditions {

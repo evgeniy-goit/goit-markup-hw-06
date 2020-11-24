@@ -399,7 +399,13 @@ footer {
 
 .footer-btn:hover,
 .footer-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--white);
+  color: var(--accent-color);
+}
+
+.footer-btn:hover .logo-send,
+.footer-btn:focus .logo-send {
+  fill: var(--accent-color);
 }
 
 .logo-send {
