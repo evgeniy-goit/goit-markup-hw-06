@@ -395,17 +395,37 @@
                     <h2 class="madal-title">Оставьте свои данные, мы перезвоним</h2>
                     <div class="">
                         <form class="modal-form">
-                            <div class="modal-form-feald">
+                            
+                            <label class="modal-form-feald" for="name">
+                                Имя
+                                <input class="modal-input" type="name" pattern="^[А-Яа-яЁё\s]+$" placeholder=" " name="name" id="name" />
+                                    <svg class="modal-logo">
+                                        <use href="./images/logo/sprite.svg#person-black"></use>
+                                    </svg>
+                            </label>
+                            
+
+                            <!--<div class="modal-form-feald">
                                 <label for="name">Имя</label>
-                                <input class="" type="name" name="name" id="name" />
-                            </div>
+                                <input class="modal-input" type="name" name="name" id="name" />
+                                <svg class="modal-logo">
+                                    <use href="./images/logo/sprite.svg#person-black"></use>
+                                </svg>
+                                
+                            </div>-->
                             <div class="modal-form-feald">
                                 <label for="telephone">Телефон</label>
-                                <input class="" type="tel" name="telephone" id="telephone" />
+                                <input class="" type="tel" name="telephone" pattern="^[ 0-9]+$" placeholder=" " id="telephone" />
+                                    <svg class="modal-logo">
+                                        <use href="./images/logo/sprite.svg#phone-black"></use>
+                                    </svg>
                             </div>
                             <div class="modal-form-feald">
                                 <label for="email">Почта</label>
-                                <input class="" type="email" name="email" id="email" />
+                                <input class="" type="email" name="email" placeholder=" " id="email" />
+                                    <svg class="modal-logo">
+                                        <use href="./images/logo/sprite.svg#email-black"></use>
+                                    </svg>
                             </div>
                             <div class="modal-form-feald">
                                 <label for="comment">Комментарий</label>

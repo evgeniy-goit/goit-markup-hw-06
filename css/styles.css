@@ -405,6 +405,7 @@ main {
 }
 
 .modal-form-feald {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -425,9 +426,11 @@ main {
   height: 40px;
   margin: 0px;
   padding: 12px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: 16px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-feald input:focus {
@@ -509,4 +512,32 @@ main {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*.modal-input {
+  position: relative;
+}*/
+
+.modal-logo {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  margin-left: 12px;
+  fill: var(--main-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-feald input:focus + .modal-logo {
+  fill: var(--accent-color);
+}
+
+.modal-form-feald input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.modal-form-feald input:not(:placeholder-shown):invalid {
+  border-color: red;
 }
