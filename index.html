@@ -393,12 +393,11 @@
                         </svg>
                     </button>
                     <h2 class="madal-title">Оставьте свои данные, мы перезвоним</h2>
-                    <div class="">
                         <form class="modal-form">
                             
-                            <label class="modal-form-feald" for="name">
+                            <label class="modal-form-feald" >
                                 Имя
-                                <input class="modal-input" type="name" pattern="^[А-Яа-яЁё\s]+$" placeholder=" " name="name" id="name" />
+                                <input class="modal-input" type="name" pattern="^[А-Яа-яЁё\s]+$" placeholder=" " name="name" />
                                     <svg class="modal-logo">
                                         <use href="./images/logo/sprite.svg#person-black"></use>
                                     </svg>
@@ -431,16 +430,24 @@
                                 <label for="comment">Комментарий</label>
                                 <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                             </div>
-                            <div class="modal-conditions">
+                               
+                                <label class="modal-conditions">
+                                    <input class="checkbox" type="checkbox" value="conditions" />
+                                    <span class="icon-check"></span>
+                                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                                </label>
+
+
+                            <!--<div class="modal-conditions">
                                 <input class="" type="checkbox" value="conditions" id="conditions" />
-                                <label for="conditions">Соглашаюсь с рассылкой и принимаю 
+                                <label for="conditions">Соглашаюсь с рассылкой и принимаю
                                     <a href="">Условия договора</a>
                                 </label>
-                            </div>
+                            </div>-->
                     
                             <button type="submit" class="modal-btn">Отправить</button>
                         </form>
-                    </div>
+
                 </div>
             </div>
             <script src="./js/modal.js"></script>
